@@ -1,3 +1,8 @@
+import controller.GreeterController
+import view.GreeterView
+
 fun main(args: Array<String>) {
-    println("Hello World!")
+    val view = GreeterView()
+    val controller = GreeterController(view)
+    controller.startGreeting()
 }
